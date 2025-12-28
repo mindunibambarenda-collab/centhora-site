@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photography Competition | Centhora'25</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #f1f1f1;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      background: #1f1f1f;
+      border-bottom: 2px solid #00ff99;
+    }
+
+    header img {
+      height: 60px;
+      width: auto;
+      animation: pulse 3s infinite ease-in-out;
+    }
+
+    header h1 {
+    font-family: Hello Paris;
+    font-weight: 700;
+    color: #00ff99;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    animation: fadeInDown 1.5s ease forwards;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00ffc3;
+      margin-bottom: 15px;
+      }
+
+    .rules {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      border-left: 4px solid #00ffc3;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .form-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    button.select-btn {
+      padding: 12px 25px;
+      background-color: #00ffc3;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    button.select-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00ffc3;
+    }
+
+    .form-box {
+      display: none;
+      background-color: #141414;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 30px auto;
+      animation: fadeIn 1s ease-in;
+      border: 1px solid #00ffc3;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      background-color: #222;
+      border: 1px solid #444;
+      border-radius: 4px;
+      color: #fff;
+    }
+
+    .form-box button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #00ffc3;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .form-box button:hover {
+      background-color: #00bfa1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      color: #aaa;
+      margin-top: 60px;
+      font-size: 14px;
+      border-top: 1px solid #333;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    }
+    @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="C:\Users\User\OneDrive\문서\SOCIETIES\SCIENCE\LOGOS\SCHOOL BADGE.png" alt="School Logo" title="Girls' High School Kandy" />
+    <h1>PHOTOGRAPHY COMPETITION – CENTHORA'25</h1>
+    <img src="C:\Users\User\OneDrive\문서\SOCIETIES\SCIENCE\LOGOS\WhatsApp Image 2025-02-04 at 15.56.59_3da1c639_Nero_AI_Background_Remover_Nero AI_Photo_Face.png" alt="Science Society Logo" title="Science Society of Girls' High School Kandy" />
+  </header>
+
+  <section>
+    <h2>Rules & Regulations</h2>
+    <div class="rules">
+      <p><strong>Topic:</strong><b> Capturing the Clues:A Forensic Story Through the Lens </b></p>
+      <ol>
+        <li>Photos must capture forensic science-related themes (e.g., mystery, clues, investigation).</li>
+        <li>Participants can submit only 1 photograph(Submission link will be provided later).</li>
+        <li>Photos should be original and taken by the participant</li>
+        <li>Digital photos must be submitted in JPEG format with good resolution.</li>
+        <li>Editing is allowed but must not alter the original content drastically.</li>
+        <li>Photos should be appropriate for all audiences.</li>
+        <li>Submit photos with captions explaining the concept behind each image.</li>
+        <li>Photos will be judged on creativity, storytelling, composition, and relevance.</li>
+        <li>Only individual submissions are allowed.</li>
+        <li>Top 3 will be announced trough our official pages.</li>
+      </ol>
+    </div>
+
+    <div class="form-buttons">
+      <button class="select-btn" onclick="showForm('intra')">Intra-School Registration</button>
+      <button class="select-btn" onclick="showForm('inter')">Inter-School Registration</button>
+    </div>
+
+    <div id="intra-form" class="form-box">
+      <h3>Intra-School Registration</h3>
+      <form action="mailto:mindunibambarenda@gmail.com" method="POST" enctype="text/plain">
+        <label>Full Name:</label>
+        <input type="text" name="Full Name" required>
+
+        <label>Grade:</label>
+        <input type="text" name="Grade" required>
+
+        <label>School:</label>
+        <input type="text" value="Girls' High School Kandy" disabled>
+
+        <label>Contact Number:</label>
+        <input type="text" name="Contact" required>
+
+        <label>Email (optional):</label>
+        <input type="email" name="Email">
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="inter-form" class="form-box">
+      <h3>Inter-School Registration</h3>
+      <form action="mailto:mindunibambarenda@gmail.com" method="POST" enctype="text/plain">
+        <label>Full Name:</label>
+        <input type="text" name="Full Name" required>
+
+        <label>Grade:</label>
+        <input type="text" name="Grade" required>
+
+        <label>School:</label>
+        <input type="text" name="School" required>
+
+        <label>Contact Number:</label>
+        <input type="text" name="Contact" required>
+
+        <label>Email (optional):</label>
+        <input type="email" name="Email">
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    Organized by The Science Society of Girls' High School Kandy
+  </footer>
+
+  <script>
+    function showForm(type) {
+      document.getElementById('intra-form').style.display = 'none';
+      document.getElementById('inter-form').style.display = 'none';
+
+      if (type === 'intra') {
+        document.getElementById('intra-form').style.display = 'block';
+      } else if (type === 'inter') {
+        document.getElementById('inter-form').style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+</html>

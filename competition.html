@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Competitions - Centhora'25</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    body {
+      margin: 0;
+      background: #121212;
+      color: #eee;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      background: #1f1f1f;
+      border-bottom: 2px solid #00ff99;
+    }  
+    header img {
+    height: 60px;
+    width: auto;
+    animation: pulse 3s infinite ease-in-out;
+    }
+    header h1 {
+      font-family: Hello Paris;
+      font-weight: 700;
+      color: #00ff99;
+      letter-spacing: 2px;
+      font-size: 2rem;
+      animation: fadeInDown 1.5s ease forwards;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .competition-card {
+      background: #222;
+      border-radius: 12px;
+      width: 300px;
+      padding: 1.5rem;
+      box-shadow: 0 0 15px #00ff99a0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .competition-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px #00ff99;
+    }
+    .competition-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      color: #00ff99;
+    }
+    .competition-desc {
+      flex-grow: 1;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #ccc;
+      line-height: 1.4;
+    }
+    .btn-select {
+      background: #00ff99;
+      border: none;
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      font-weight: 700;
+      color: #121212;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      user-select: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .btn-select:hover {
+      background: #00cc77;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      background: #111;
+      user-select: none;
+    }
+    @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    }
+    @keyframes fadeInDown {
+      0% {opacity: 0; transform: translateY(-30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="C:\Users\User\OneDrive\문서\SOCIETIES\SCIENCE\LOGOS\SCHOOL BADGE.png" alt="School Logo" title="Girls' High School Kandy" />
+  <h1>CHOOSE YOUR COMPETITION</h1>
+  <img src="C:\Users\User\OneDrive\문서\SOCIETIES\SCIENCE\LOGOS\WhatsApp Image 2025-02-04 at 15.56.59_3da1c639_Nero_AI_Background_Remover_Nero AI_Photo_Face.png" alt="Science Society Logo" title="Science Society of Girls' High School Kandy" />
+</header>
+
+<main>
+  <div class="competition-card" onclick="location.href='poster.html'">
+    <div class="competition-title">Poster Designing Competition</div>
+    <div class="competition-desc">
+      Design a movie poster inspired by forensic science stories.
+      <h2>Grade 10-13</h2>
+    </div>
+    <button class="btn-select">Register</button>
+  </div>
+
+  <div class="competition-card" onclick="location.href='photography.html'">
+    <div class="competition-title">Photography Competition</div>
+    <div class="competition-desc">
+      Capturing the Clues: A Forensic Story Through the Lens
+      <h2>Grade 10-13</h2>
+    </div>
+    <button class="btn-select">Register</button>
+  </div>
+
+  <div class="competition-card" onclick="location.href='video-editing.html'">
+    <div class="competition-title">Video Editing Competition</div>
+    <div class="competition-desc">
+      Create A Video About A Day in the Life of a Crime Scene Investigator
+      <h2>Grade 10-13</h2>
+    </div>
+    <button class="btn-select">Register</button>
+  </div>
+</main>
+
+<footer>Organized by The Science Society Of Girls' High School Kandy</footer>
+
+</body>
+</html>
+   
